@@ -3,9 +3,32 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Ha
 stops.append("Edinburgh Waverley")
 print(stops)
 
+stops.insert(0,"Glasgow Queen st"),
+stops.insert(4, "polmont")
+print(stops)
 
-    
+index = stops.index('Linlithgow')
+print(index)
 
+stops.remove('Livingston')
+print(stops)
+
+stops.pop(2)
+print(stops)
+
+num_items = len(stops)
+print(num_items)
+
+stops.sort()
+print(stops)
+
+stops.reverse()
+print(stops)
+
+stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
+
+for stop in stops:
+    print(f'{stop} is one of the stops on the train')
 #1. Add "Edinburgh Waverley" to the end of the list
 #2. Add "Glasgow Queen St" to the start of the list
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
